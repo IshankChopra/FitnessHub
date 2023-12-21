@@ -1,7 +1,15 @@
-import React from "react";
+export const exerciseOptions = {
+  method: "GET",
 
-const fetchData = () => {
-  return <div>fetchData</div>;
+  headers: {
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+    "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
+  },
 };
 
-export default fetchData;
+export const fetchData = async (url, options) => {
+  const response = await fetch(url, options);
+  const data = await response.json();
+
+  return data;
+};
