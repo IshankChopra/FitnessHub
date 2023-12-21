@@ -19,7 +19,8 @@ const Herobanner = () => {
         mb="23px"
         mt="30px"
       >
-        Sweat smile <br /> and Repeat
+        Sweat Today, <br />
+        Smile Tomorrow.
       </Typography>
 
       <Typography fontSize="22px" lineHeight="35px" mb={4}>
