@@ -2,10 +2,11 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
 import "./App.css";
-import Exercisedetails from "./pages/Exercisedetails";
+
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ExerciseDetail from "./pages/ExerciseDetail";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element=<Home /> />
-        <Route path="/exercise/:id" element=<Exercisedetails /> />
+        <Route path="/exercise/:id" element={<ExerciseDetail />} />
       </Routes>
       <Footer />
     </Box>
